@@ -1,0 +1,39 @@
+╔══════════════════════════════════════════════════════╗
+║              tmux cheatsheet (German Mac)            ║
+║              Prefix: Ctrl+T                          ║
+╠══════════════════════════════════════════════════════╣
+║  PANES                                               ║
+║  Alt+←/→/↑/↓       navigate panes (no prefix!)      ║
+║  Ctrl+T  -          split below                      ║
+║  Ctrl+T  _          split right (Shift+-)            ║
+║  Ctrl+T  h/j/k/l    navigate panes (vim-style)       ║
+║  Ctrl+T  H/J/K/L    resize pane (hold to repeat)     ║
+║  Ctrl+T  x          close pane                       ║
+║  Ctrl+T  z          zoom/unzoom pane                 ║
+╠══════════════════════════════════════════════════════╣
+║  WINDOWS                                             ║
+║  F1 – F8            switch to window 1-8             ║
+║  Ctrl+T  c          new window                       ║
+║  Ctrl+T  n / p      next / previous window           ║
+║  Ctrl+T  ,          rename window                    ║
+╠══════════════════════════════════════════════════════╣
+║  COPY & PASTE                                        ║
+║  Ctrl+T  e          enter copy mode                  ║
+║    v                start selection (vi)             ║
+║    y                yank (copy) & exit               ║
+║    q / Esc          exit copy mode                   ║
+║  Ctrl+T  p          paste                            ║
+╠══════════════════════════════════════════════════════╣
+║  SESSION                                             ║
+║  Ctrl+T  d          detach session                   ║
+║  Ctrl+T  $          rename session                   ║
+║  Ctrl+T  s          list sessions                    ║
+╠══════════════════════════════════════════════════════╣
+║  CLAUDE CODE                                         ║
+║  Ctrl+T  g          resume last claude session       ║
+║  Ctrl+T  G          pick a claude session            ║
+╠══════════════════════════════════════════════════════╣
+║  MISC                                                ║
+║  Ctrl+T  r          reload config                    ║
+║  Ctrl+T  ?          show all keybindings             ║
+╚══════════════════════════════════════════════════════╝
