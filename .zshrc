@@ -66,8 +66,9 @@ git
 rails
 sudo
 tmux
-zsh-syntax-highlighting
 sudo
+node
+brew
 
 )
 
@@ -78,6 +79,11 @@ export PATH
 
 #  export PATH="$PATH:/home/pepper/.rvm/bin:/home/pepper/.rvm/gems/ruby-2.2.1/bin:/home/pepper/.rvm/gems/ruby-2.2.1@global/bin:/home/pepper/.rvm/rubies/ruby-2.2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/pepper/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+
+export JUPYTER_PATH=/opt/homebrew/share/jupyter
+export JUPYTER_CONFIG_PATH=/opt/homebrew/etc/jupyter
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,3 +118,27 @@ bindkey "${terminfo[kend]}" end-of-line
 
 export NVM_DIR="/home/pepper/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/pepper/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/pepper/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/pepper/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/pepper/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+eval "$(zoxide init zsh)"
+
+# Added by Antigravity
+export PATH="/Users/pepper/.antigravity/antigravity/bin:$PATH"
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+alias tmux-help="cat ~/dotfiles/tmux-cheatsheet.txt"
