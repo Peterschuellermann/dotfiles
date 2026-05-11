@@ -1,1 +1,6 @@
 .DS_Store
+
+# Claude global config — track only skills and settings
+.claude-global/*
+!.claude-global/skills/
+!.claude-global/settings.json
